@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <title>Json在线解析及格式化验证 - Json.cn</title>
+    <title>Json在线解析及格式化验证</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta http-equiv="Cache-Control" content="max-age=7200" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="baidu-site-verification" content="mlJsiTNxiD" />
-    <meta name="google-site-verification" content="CPogK9tQWL5XIDF9F9x_tJyy1HtpDI8Rv6owOEIkUvM" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all" />
-    <meta name="author" content="json.cn" />
     
     <meta name="keywords" content="json,json在线解析,json格式化,json格式验证,json转xml,xml转json"/>
-    <meta name="description" content="Json中文网致力于在中国推广Json,并提供相关的Json解析、验证、格式化、压缩、编辑器以及Json与XML相互转换等服务"/>
+    <meta name="description" content="提供相关的Json解析、验证、格式化、压缩、编辑器以及Json与XML相互转换等服务"/>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -31,17 +28,11 @@
 <header class="header">
     <div class="row-fluid" >
         <div class="col-md-5" style="position:relative;">
-            <a class="logo" href="index.html">junbaor.<span style="color:#555;">github.io/json</span></a>
-
         </div>
         <nav class="col-md-7" style="padding:10px 0;"  align="right">
             <div  class="navi">
                 <a href="index.html" data-placement="bottom">在线解析</a>
-                
-                <a href="wiki.html"  data-placement="bottom">什么是Json</a>
                 <a href="code.html"  data-placement="bottom">Json解析代码</a>
-                <a href="component.html"  data-placement="bottom">Json组件</a>
-
             </div>
         </nav>
         <br style="clear:both;" />
@@ -51,15 +42,20 @@
 
 <main class="row-fluid">
     <div class="col-md-5" style="padding:0;">
-        <textarea id="json-src" placeholder="在此输入json字符串或XML字符串..."   class="form-control"  style="height:722px;padding:0 10px 10px 20px;border:0;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-radius:0;resize: none; outline:none;">{&#13"Json解析":"支持格式化高亮折叠",&#13"支持XML转换":"支持XML转换Json,Json转XML",&#13"Json格式验证":"更详细准确的错误信息"</textarea>
+         <div style="padding:10px;font-size:16px;border-bottom:solid 1px #ddd;height: 50px;" class="navi">
+            
+        </div>
+        <div id="left-box" style="height:679px;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-radius:0;resize: none;overflow-y:scroll; outline:none;position:relative;">
+        <textarea id="json-src" placeholder="在此输入json字符串或XML字符串..."   class="form-control"  style="height:678px;padding:0 10px 10px 20px;border:0;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-radius:0;resize: none; outline:none;">{&#13"Json解析":"支持格式化高亮折叠",&#13"支持XML转换":"支持XML转换Json,Json转XML",&#13"Json格式验证":"更详细准确的错误信息"</textarea>
+    </div>
     </div>
     <div class="col-md-7" style="padding:0;">
-        <div style="padding:10px;font-size:16px;border-bottom:solid 1px #ddd;" class="navi">
+        <div style="padding:10px;font-size:16px;border-bottom:solid 1px #ddd;height: 50px;" class="navi">
             <a href="index.html#" class="tip zip" title="压缩"  data-placement="bottom"><i class="fa fa-database"></i></a>
             <a href="index.html#" class="tip shown"  title="显示行号"  data-placement="bottom"><i class="glyphicon glyphicon-sort-by-order"></i></a>
             <a href="index.html#" class="tip clear" title="清空"  data-placement="bottom"><i class="fa fa-trash"></i></a>
         </div>
-        <div id="right-box"  style="height:679px;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-radius:0;resize: none;overflow-y:scroll; outline:none;position:relative;">
+        <div id="right-box" style="height:679px;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-radius:0;resize: none;overflow-y:scroll; outline:none;position:relative;">
             <div id="line-num" style="background-color:#fafafa;padding:0px 8px;float:left;border-right:dashed 1px #eee;display:none;z-index:-1;color:#999;position:absolute;text-align:center;over-flow:hidden;">
                 <div>0</div>
             </div>
